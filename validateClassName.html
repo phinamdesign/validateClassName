@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tên lớp hợp lệ</title>
+</head>
+<body>
+<script>
+    let className = prompt("Nhập tên lớp");
+    let regEx = /^[C|A|P][0-9]{4,4}[G-M]$/;
+    if (regEx.test(className)){
+        alert("Tên lớp hợp lệ");
+    }else {
+        alert("Tên lớp không hợp lệ");
+    }
+</script>
+</body>
+</html>
